@@ -28,7 +28,7 @@ body{
   line-height:1.7;
   -webkit-font-smoothing:antialiased;
 }
-img{max-width:100%;display:block}
+img{max-width:100%;display:block;height:auto}
 a{color:var(--clay)}
 a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--clay);outline-offset:3px}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
@@ -93,7 +93,7 @@ section.block{padding:92px 0}
 .ember-band p{color:#a7b0ac;margin:18px 0 26px;max-width:44ch}
 .ember-band p b{color:var(--ember-text)}
 .ember-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
-.ember-actions img{height:48px}
+.ember-actions img{height:48px;width:auto}
 .ember-actions a.more{color:var(--ember);text-decoration:none;font-weight:600}
 .ember-actions a.more:hover{text-decoration:underline}
 .ember-note{margin-top:16px;font-size:.85rem;color:var(--ember-dim)}
