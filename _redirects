@@ -1,2 +1,8 @@
-# Old Squarespace slug, still indexed by Google as of the Netlify migration
-/about   /drurkov/   301
+# Old pre-Netlify site slugs, still indexed by Google as of the migration
+/about            /drurkov/    301
+/about-3          /drurkov/    301
+/services-2       /services/   301
+/why-pain         /resources/  301
+/journal-club-1   /resources/  301
+/mtpc             /resources/  301
+/blog-feed.xml    /resources/  301
