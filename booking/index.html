@@ -3,22 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Book an Appointment | Cascade Headache</title>
-<meta name="description" content="Schedule your appointment at Cascade Headache. Easy booking with secure credit card processing, ensuring prompt access to headache care services across Washington.">
+<title>Request an Appointment | Cascade Headache</title>
+<meta name="description" content="Request a new-patient appointment with Cascade Headache, a headache, migraine, and facial pain specialty practice serving patients across Washington.">
 <link rel="canonical" href="https://cascadeheadache.com/booking/">
-<meta property="og:title" content="Book an Appointment | Cascade Headache">
-<meta property="og:description" content="Schedule your appointment at Cascade Headache. Easy booking with secure credit card processing, ensuring prompt access to headache care services across Washington.">
+<meta property="og:title" content="Request an Appointment | Cascade Headache">
+<meta property="og:description" content="Complete a brief request so Cascade Headache can determine whether the practice may be a good fit for your needs.">
 <meta property="og:image" content="https://cascadeheadache.com/assets/og-share.png">
 <meta property="og:url" content="https://cascadeheadache.com/booking/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Book an Appointment | Cascade Headache">
-<meta name="twitter:description" content="Schedule your appointment at Cascade Headache. Easy booking with secure credit card processing, ensuring prompt access to headache care services across Washington.">
+<meta name="twitter:title" content="Request an Appointment | Cascade Headache">
+<meta name="twitter:description" content="Complete a brief request so Cascade Headache can determine whether the practice may be a good fit for your needs.">
 <meta name="twitter:image" content="https://cascadeheadache.com/assets/og-share.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Public+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
+<style>
+.request-block{padding-top:64px}
+.request-wrap{max-width:860px}
+.request-form{gap:26px}
+.form-section{background:var(--cream);border:1px solid var(--line-light);border-radius:10px;padding:30px;display:grid;gap:22px}
+.form-section h3{font-size:1.65rem;color:var(--slate-ink);padding-bottom:14px;border-bottom:1px solid var(--line-light)}
+.request-form label,.request-form legend{font-size:.95rem;letter-spacing:.01em;text-transform:none;color:var(--slate-ink);font-weight:600;line-height:1.5}
+.request-form label span[aria-hidden="true"],.request-form legend span[aria-hidden="true"]{color:#9a5c46}
+.request-form input,.request-form textarea{background:#f7f7f3}
+.request-form textarea{min-height:130px}
+.request-form .field-short{max-width:360px}
+.field-help{font-size:.88rem;color:#6b7573;margin:-3px 0 8px}
+.choice-group{border:0;padding:0;margin:0}
+.choice-group legend{margin-bottom:12px}
+.choice-row{display:flex;gap:28px;flex-wrap:wrap}
+.request-form .choice{display:flex;align-items:flex-start;gap:10px;margin:0;font-size:1rem;font-weight:400;cursor:pointer}
+.request-form input[type="radio"],.request-form input[type="checkbox"]{width:1.15rem;height:1.15rem;min-width:1.15rem;margin-top:.22rem;padding:0;accent-color:var(--clay);background:transparent;border:1px solid var(--line-light)}
+.form-honeypot{display:none!important}
+.form-status{min-height:1.5em;font-size:.94rem}
+.form-status.error{color:#7e3535;border-left:2px solid #7e3535;padding-left:12px}
+.request-success{background:var(--cream);border:1px solid var(--line-light);border-radius:10px;padding:38px}
+.request-success h2{margin-bottom:16px}
+.request-success p{color:#5d6866;margin-bottom:14px;max-width:62ch}
+.request-form button:disabled{opacity:.65;cursor:wait}
+@media (max-width:620px){
+  .form-section{padding:23px 19px}
+  .request-success{padding:28px 22px}
+}
+</style>
 <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Cpath%20d%3D%22M%209%2040%20L%2030%2014%20L%2051%2040%22%20fill%3D%22none%22%20stroke%3D%22%23cb9981%22%20stroke-width%3D%224.00%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3Cpath%20d%3D%22M%2035.5%2020.9%20L%2043%2012.5%20L%2056%2027%22%20fill%3D%22none%22%20stroke%3D%22%23cb9981%22%20stroke-width%3D%223.28%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3Cpath%20d%3D%22M%2013%2048.0%20L%2014.5%2048.54%20L%2016.0%2048.99%20L%2017.5%2049.29%20L%2019.0%2049.4%20L%2020.5%2049.29%20L%2022.0%2048.99%20L%2023.5%2048.54%20L%2025.0%2048.0%20L%2026.5%2047.46%20L%2028.0%2047.01%20L%2029.5%2046.71%20L%2031.0%2046.6%20L%2032.5%2046.71%20L%2034.0%2047.01%20L%2035.5%2047.46%20L%2037.0%2048.0%20L%2038.5%2048.54%20L%2040.0%2048.99%20L%2041.5%2049.29%20L%2043.0%2049.4%20L%2044.5%2049.29%20L%2046.0%2048.99%20L%2047.5%2048.54%20L%2049.0%2048.0%22%20fill%3D%22none%22%20stroke%3D%22%23cb9981%22%20stroke-width%3D%222.80%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3Cpath%20d%3D%22M%2020%2055.0%20L%2020.92%2055.33%20L%2021.83%2055.65%20L%2022.75%2055.92%20L%2023.67%2056.15%20L%2024.58%2056.3%20L%2025.5%2056.39%20L%2026.42%2056.39%20L%2027.33%2056.32%20L%2028.25%2056.16%20L%2029.17%2055.95%20L%2030.08%2055.67%20L%2031.0%2055.36%20L%2031.92%2055.03%20L%2032.83%2054.7%20L%2033.75%2054.38%20L%2034.67%2054.1%20L%2035.58%2053.87%20L%2036.5%2053.71%20L%2037.42%2053.62%20L%2038.33%2053.61%20L%2039.25%2053.67%20L%2040.17%2053.82%20L%2041.08%2054.03%20L%2042.0%2054.3%22%20fill%3D%22none%22%20stroke%3D%22%23cb9981%22%20stroke-width%3D%222.80%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3C/svg%3E'>
 </head>
 <body>
@@ -65,20 +94,116 @@
     </g>
   </svg>
   <div class="wrap inner">
-    <p class="eyebrow">Scheduling</p>
-    <h1>Booking</h1>
-    <p class="notice" style="margin-top:26px"><b>Please Note:</b> a credit card is required to book but will not be charged until your visit.</p>
+    <p class="eyebrow">New patients</p>
+    <h1>Request an appointment</h1>
+    <p class="lede">Tell us a little about what you are looking for. We will review your request and, if Cascade Headache appears to be a good fit, email you a private link to schedule your first appointment.</p>
   </div>
 </section>
 
-<section class="block light" style="padding-top:56px">
-  <div class="wrap">
-    <div class="embed-scroll">
-      <div class="embed">
-        <iframe title="Cascade Headache appointment scheduler" width="100%" height="1000" frameborder="0" src="https://ehr.charmtracker.com/publicCal.sas?method=getCal&amp;digest=e46074c0ed5bb0a8d78c4f03351a3cb5dfc0be950f7fc5c735884bad78a04c576ee57013c1a537e6bad844ced362eaabd95fcbc3b76e32a2"></iframe>
-      </div>
+<section class="block light request-block">
+  <div class="wrap request-wrap">
+    <div id="request-intro">
+      <h2>Cascade pre-screening</h2>
+      <p class="notice" style="margin:20px 0 32px">Cascade Headache is a specialty headache, migraine, and facial pain practice. Please answer the questions carefully so we can determine whether we may be a good fit before scheduling.</p>
+      <p class="fine" style="margin-bottom:30px">Submitting this form does not establish a patient-provider relationship or guarantee an appointment. Please keep responses brief and do not send medical records, medication lists, images, or urgent concerns through this form.</p>
     </div>
-    <p class="fine" style="margin-top:22px">Having trouble with the scheduler? Email <a href="mailto:hello@cascadeheadache.com">hello@cascadeheadache.com</a> or <a href="/contact/">send us a message</a> and we&rsquo;ll get you booked.</p>
+
+    <div id="form-success" class="request-success" role="status" aria-live="polite" hidden>
+      <p class="eyebrow">Request received</p>
+      <h2>Thank you.</h2>
+      <p>We have received your appointment request. Cascade Headache will review it and contact you at the email address or phone number you provided.</p>
+      <p>Submitting a request does not guarantee that an appointment will be offered. This form is not monitored for emergencies. If you are experiencing a medical emergency, call 911.</p>
+    </div>
+
+    <form id="appointment-request-form" class="form request-form" action="https://formspree.io/f/mbdnygaq" method="POST">
+      <section class="form-section" aria-labelledby="contact-heading">
+        <h3 id="contact-heading">Your contact information</h3>
+        <div class="row">
+          <div>
+            <label for="first-name">First name <span aria-hidden="true">*</span></label>
+            <input id="first-name" name="first_name" type="text" autocomplete="given-name" required>
+          </div>
+          <div>
+            <label for="last-name">Last name <span aria-hidden="true">*</span></label>
+            <input id="last-name" name="last_name" type="text" autocomplete="family-name" required>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label for="email">Email <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div>
+            <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+          </div>
+        </div>
+        <div class="field-short">
+          <label for="dob">Date of birth <span aria-hidden="true">*</span></label>
+          <input id="dob" name="date_of_birth" type="date" autocomplete="bday" required>
+        </div>
+      </section>
+
+      <section class="form-section" aria-labelledby="fit-heading">
+        <h3 id="fit-heading">A little about what you are looking for</h3>
+
+        <div>
+          <label for="goals">What are your goals that you wish to accomplish in our work together? <span aria-hidden="true">*</span></label>
+          <textarea id="goals" name="goals" required></textarea>
+        </div>
+
+        <div>
+          <label for="conditions">What are your current medical conditions? Enter “N/A” if you have no medical history. <span aria-hidden="true">*</span></label>
+          <textarea id="conditions" name="current_medical_conditions" required></textarea>
+        </div>
+
+        <div>
+          <label for="approach">How do you expect your medical providers to approach your care? <span aria-hidden="true">*</span></label>
+          <p class="field-help" id="approach-help">For example, do you prefer more collaboration or enjoy integrating non-pharmacological approaches?</p>
+          <textarea id="approach" name="preferred_care_approach" aria-describedby="approach-help" required></textarea>
+        </div>
+
+        <div>
+          <label for="impact">What impacts are headaches or migraines having on your life currently? <span aria-hidden="true">*</span></label>
+          <textarea id="impact" name="current_headache_impact" required></textarea>
+        </div>
+
+        <div>
+          <label for="anything-else">Anything else you would like us to know about you?</label>
+          <textarea id="anything-else" name="anything_else"></textarea>
+        </div>
+      </section>
+
+      <section class="form-section" aria-labelledby="practice-heading">
+        <h3 id="practice-heading">Practice information</h3>
+
+        <fieldset class="choice-group">
+          <legend>I understand that Cascade Headache does not currently accept health insurance. <span aria-hidden="true">*</span></legend>
+          <div class="choice-row">
+            <label class="choice"><input type="radio" name="insurance_acknowledgment" value="Agree" required> <span>Agree</span></label>
+            <label class="choice"><input type="radio" name="insurance_acknowledgment" value="Disagree"> <span>Disagree</span></label>
+          </div>
+        </fieldset>
+
+        <div>
+          <label for="referral-source">How did you hear about us? <span aria-hidden="true">*</span></label>
+          <textarea id="referral-source" name="how_did_you_hear_about_us" required></textarea>
+        </div>
+
+        <fieldset class="choice-group">
+          <legend>I understand that Cascade Headache has a late cancellation/no-show policy. The appointment must be cancelled or rescheduled at least 24 hours before the appointment to avoid the full session fee. <span aria-hidden="true">*</span></legend>
+          <label class="choice"><input type="checkbox" name="cancellation_policy_acknowledgment" value="I understand" required> <span>I understand.</span></label>
+        </fieldset>
+      </section>
+
+      <input type="hidden" name="_subject" value="New Cascade Headache appointment request">
+      <input type="hidden" name="form_type" value="New patient pre-screening request">
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="form-honeypot">
+
+      <div id="form-status" class="form-status" aria-live="polite"></div>
+      <button class="btn" type="submit">Send appointment request</button>
+      <p class="fine">By submitting, you confirm that the information above is accurate to the best of your knowledge. This form is not monitored for urgent or emergency concerns.</p>
+    </form>
   </div>
 </section>
 
@@ -101,6 +226,61 @@
     </nav>
   </div>
 </footer>
+
+<script>
+(function () {
+  var form = document.getElementById('appointment-request-form');
+  var status = document.getElementById('form-status');
+  var success = document.getElementById('form-success');
+  var intro = document.getElementById('request-intro');
+  var submitButton = form.querySelector('button[type="submit"]');
+
+  form.addEventListener('submit', async function (event) {
+    event.preventDefault();
+
+    if (!form.reportValidity()) {
+      return;
+    }
+
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending…';
+    status.className = 'form-status';
+    status.textContent = '';
+
+    try {
+      var response = await fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        form.reset();
+        form.hidden = true;
+        intro.hidden = true;
+        success.hidden = false;
+        success.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        return;
+      }
+
+      if (response.status === 429) {
+        throw new Error('Too many requests were sent at once. Please wait a moment and try again.');
+      }
+
+      var data = await response.json().catch(function () { return null; });
+      var message = data && data.errors
+        ? data.errors.map(function (error) { return error.message; }).join(' ')
+        : 'We could not send your request. Please try again or email hello@cascadeheadache.com.';
+      throw new Error(message);
+    } catch (error) {
+      status.className = 'form-status error';
+      status.textContent = error.message || 'We could not send your request. Please try again or email hello@cascadeheadache.com.';
+      submitButton.disabled = false;
+      submitButton.textContent = 'Send appointment request';
+    }
+  });
+})();
+</script>
 
 </body>
 </html>
