@@ -73,18 +73,20 @@ Delete this file before merging. Netlify would serve it at `/SITE-REPORT.md`.
 
 ## Open TODOs
 
-1. **Good Faith Estimate language does not exist in this repo.** I searched every page for "good faith", "estimate" and "No Surprises". There was nothing to keep. If you have GFE notice text, it needs adding (services and booking are the likely spots).
-2. **Join page, setup timing** (visible TODO marker). How long from request to live? Right now a new clinic is added through the app's bundled allowlist, which suggests it needs an app update.
-3. **Join page, HIPAA/BAA** (visible TODO marker). Neither repo documents a BAA or HIPAA status. `/privacy` says Ember makes no HIPAA-certification claim. Add your statement or delete the line.
-4. **Join page, cost.** "Free for your clinic and your patients" is carried over from the live page. Confirm it still holds under the new positioning.
-5. **Discovery calls outside the repo.** The Charm scheduler (`/schedule/` iframe) and any booking emails may still offer a discovery call appointment type.
-6. **/ember/ privacy claim looks out of date.** It says "Ember has no cloud database for health data, and your account holds nothing but the email you sign in with." Ember's privacy policy describes optional encrypted backup to Google Cloud. I didn't change it because it's outside this brief.
-7. **Interior utility bar.** The homepage bar is now Ember-first. Every other page still says "Virtual-first specialty care across Washington / In-person procedure days in Lacey, WA." Change them too if you want them to match.
-8. **Remaining em-dashes in copy I didn't rewrite**: the homepage "We get it" paragraph and the Dr. Urkov quote (home and /drurkov/).
-9. **"Status Busters"** stays on /resources/ under Additional Tools. If you deliver it as injections, remove it along with rescue injections.
-10. **Naming.** The app's own string is lowercase "direct send" ("How clinics can join direct send"). The page uses "Direct Send" as you wrote it. Pick one.
-11. **Structured data.** No JSON-LD on either site contained prices, so there was nothing to update there. I didn't add Offer markup.
-12. **Before merging the landing PR**: `grep -n 'class="todo"' providers/join/index.html` should come back empty. After deploy, that repo's CLAUDE.md asks for an IndexNow ping for `/providers/join/`.
+Updated Oct 25 after Sam's answers.
+
+1. **Good Faith Estimate.** Still open. No GFE notice exists on the site. See the note in the conversation; waiting on a decision.
+2. ~~Setup timing~~ Done. The page now says "usually the same day, and always within 5 business days."
+3. ~~HIPAA/BAA line~~ Removed per Sam.
+4. **Clinic pricing.** Open. A visible TODO marker replaced "free for your clinic." The page says patients are always free. The draft plan is 3 months free, then a monthly fee. Update the page, meta and `llms.txt` once the price is set.
+5. ~~Discovery calls in Charm~~ Sam is handling this. The website no longer offers them.
+6. ~~/ember/ privacy line~~ Fixed. It now reads: "Your diary is stored on your phone. With Ember Plus, automatic backup encrypts your records on your phone before upload, and Ember's server never receives the key to read them."
+7. **Interior utility bar.** Every page except the homepage still says "Virtual-first specialty care across Washington / In-person procedure days in Lacey, WA." Change them too if you want them to match.
+8. **Remaining em-dashes in copy I didn't rewrite**: the homepage "We get it" paragraph and the Dr. Urkov quote.
+9. **"Status Busters"** stays on /resources/. If you deliver it as injections, remove it along with rescue injections.
+10. ~~Patient-control heading~~ Changed to "Nothing sends without the patient."
+11. **Structured data.** No JSON-LD contained prices, so nothing needed updating.
+12. **Before merging the landing PR**: `grep -n 'class="todo"' providers/join/index.html` must come back empty. After deploy, ping IndexNow for `/providers/join/`.
 
 ## Google Play listing
 
