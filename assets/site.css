@@ -93,7 +93,6 @@ section.block{padding:92px 0}
 .ember-band p{color:#a7b0ac;margin:18px 0 26px;max-width:44ch}
 .ember-band p b{color:var(--ember-text)}
 .ember-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
-.ember-actions img{height:48px;width:auto}
 .ember-actions a.more{color:var(--ember);text-decoration:none;font-weight:600}
 .ember-actions a.more:hover{text-decoration:underline}
 .ember-note{margin-top:16px;font-size:.85rem;color:var(--ember-dim)}
@@ -101,6 +100,16 @@ section.block{padding:92px 0}
 .phone-stack img{width:min(270px,70%);border-radius:28px;border:1px solid #333c3a;box-shadow:0 24px 60px rgba(0,0,0,.45)}
 .phone-stack img.back{position:absolute;right:4%;top:9%;width:min(220px,52%);opacity:.55;filter:brightness(.85)}
 .phone-stack img.front{position:relative;z-index:2}
+
+/* store badges: equal visible height for Apple and Google Play.
+   Google's PNG (646x250) carries 41px of transparent padding per side around a 168px-tall badge,
+   so it renders at 250/168 of the target height and the padding is cropped. Gap keeps 1/4-height clear space. */
+.store-badges{--badge-h:48px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.store-badges a{display:block;flex:none;border-radius:8px}
+.store-badges .badge-apple img{height:var(--badge-h);width:auto}
+.store-badges .badge-play{height:var(--badge-h);overflow:hidden;display:grid;place-items:center}
+.store-badges .badge-play img{height:calc(var(--badge-h) * 250 / 168);width:auto;max-width:none;margin:calc(var(--badge-h) * -41 / 168)}
+.tm{font-size:.75rem;color:var(--cream-dim);flex-basis:100%;margin-top:6px}
 
 /* question list */
 .qs{border-top:1px solid var(--line-light)}
@@ -177,6 +186,10 @@ h4{font-family:'EB Garamond',serif;font-weight:500;line-height:1.2;font-size:1.3
 .prose h4:first-child{margin-top:0}
 .light .prose h4{color:var(--slate-ink)}
 .prose .tlist{margin-bottom:10px}
+.prose .gfe-list{list-style:none;margin:0 0 18px}
+.prose .gfe-list li{position:relative;padding-left:17px;margin-bottom:12px;color:var(--cream-dim)}
+.prose .gfe-list li::before{content:"";position:absolute;left:0;top:.7em;width:5px;height:5px;border-radius:50%;background:var(--clay)}
+.prose p a{color:var(--clay)}
 
 /* bulleted lists inside accordion bodies */
 .acc .body .price-note{display:block;color:var(--clay);font-weight:600;font-size:.88rem;letter-spacing:.05em;text-transform:uppercase;margin-bottom:12px}
@@ -210,11 +223,12 @@ h4{font-family:'EB Garamond',serif;font-weight:500;line-height:1.2;font-size:1.3
 .light .steps p{color:#5d6866}
 
 /* pricing tiers (Services) */
-.tiers{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:42px}
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:42px}
 .tier{background:var(--cream);border:1px solid var(--line-light);border-radius:10px;padding:26px 22px;display:flex;flex-direction:column}
 .tier h3{font-size:1.45rem;color:var(--slate-ink);margin-bottom:3px}
 .tier .dur{font-size:.85rem;color:#6b7573}
 .tier .price{font-family:'EB Garamond',serif;font-size:2.1rem;line-height:1;color:var(--slate-ink);margin:12px 0 18px}
+.tier .price small{display:block;font-family:'Public Sans',sans-serif;font-size:.85rem;line-height:1.4;color:#6b7573;margin-top:8px}
 .tier ul{list-style:none;font-size:.93rem;color:#5d6866;line-height:1.5;margin-bottom:22px}
 .tier ul li{position:relative;padding-left:17px;margin-bottom:9px}
 .tier ul li::before{content:"";position:absolute;left:0;top:.55em;width:6px;height:6px;border-radius:50%;background:var(--clay)}
@@ -269,9 +283,11 @@ h4{font-family:'EB Garamond',serif;font-weight:500;line-height:1.2;font-size:1.3
   .pagehead{padding:54px 0 50px}
   .bio,.rescard,.contact-grid,.steps,.cols{grid-template-columns:1fr;gap:38px}
   .bio .portrait{position:static;max-width:280px}
-  .tiers{grid-template-columns:repeat(2,1fr)}
   .rescard .art{order:-1}
 }
+@media (max-width:760px){
+  .tiers{grid-template-columns:1fr;max-width:520px}
+}
 @media (max-width:620px){
-  .tiers,.form .row{grid-template-columns:1fr}
+  .form .row{grid-template-columns:1fr}
 }
