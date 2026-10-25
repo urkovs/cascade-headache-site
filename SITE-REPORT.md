@@ -75,10 +75,10 @@ Delete this file before merging. Netlify would serve it at `/SITE-REPORT.md`.
 
 Updated Oct 25 after Sam's answers.
 
-1. **Good Faith Estimate.** Still open. No GFE notice exists on the site. See the note in the conversation; waiting on a decision.
+1. ~~Good Faith Estimate~~ Added. The CMS model notice (Appendix 1, quoted verbatim from cms.gov) has its own section on /services/ (`#good-faith-estimate`), with a footer link on every page and a pointer on /booking/ and /schedule/. Patients still need a written estimate when they schedule. That happens through Charm or by hand, outside the website.
 2. ~~Setup timing~~ Done. The page now says "usually the same day, and always within 5 business days."
 3. ~~HIPAA/BAA line~~ Removed per Sam.
-4. **Clinic pricing.** Open. A visible TODO marker replaced "free for your clinic." The page says patients are always free. The draft plan is 3 months free, then a monthly fee. Update the page, meta and `llms.txt` once the price is set.
+4. ~~Clinic pricing~~ Added on the embertracker.app join page: free for 3 months after going live, then $50 a month per clinic or $500 a year. Patients never pay. Billing itself (invoices or card) isn't set up anywhere yet.
 5. ~~Discovery calls in Charm~~ Sam is handling this. The website no longer offers them.
 6. ~~/ember/ privacy line~~ Fixed. It now reads: "Your diary is stored on your phone. With Ember Plus, automatic backup encrypts your records on your phone before upload, and Ember's server never receives the key to read them."
 7. **Interior utility bar.** Every page except the homepage still says "Virtual-first specialty care across Washington / In-person procedure days in Lacey, WA." Change them too if you want them to match.
